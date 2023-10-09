@@ -1,0 +1,31 @@
+.menuDropdownTrigger {
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 22px;
+  width: 22px;
+}
+
+.bar {
+  height: 3px;
+  width: 100%;
+  display: block;
+  background-color: var(--primaryColor);
+  border-radius: var(--borderRadius);
+  transition: 0.25s ease-in-out;
+}
+
+.active .bar:nth-child(1) {
+  transform: rotate(45deg) translatey(13px);
+}
+
+.active .bar:nth-child(2) {
+  width: 0%;
+  opacity: 0;
+}
+
+.active .bar:nth-child(3) {
+  transform: rotate(-45deg) translatey(-13px);
+}

@@ -1,0 +1,143 @@
+.accordionItemHeader {
+  background-color: var(--tertiaryColor);
+  color: var(--primaryColor);
+  padding: 1em 2em;
+  margin: 0.5em 0;
+  border-radius: var(--borderRadius);
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr;
+  width: 100%;
+  align-items: center;
+  column-gap: 10px;
+  cursor: pointer;
+}
+
+.accordionItemTrigger {
+  justify-self: end;
+  font-size: 1.3em;
+  height: 16px;
+  position: relative;
+  top: 6px;
+  transition: all 500ms ease;
+
+  .bar {
+    background-color: var(--primaryColor);
+    height: 3px;
+    width: 16px;
+    border-radius: var(--borderRadius);
+  }
+
+  .bar:nth-child(1) {
+    transform: rotate(90deg);
+    transition: all 250ms ease;
+  }
+
+  .bar:nth-child(2) {
+    transform: translateY(-3px);
+  }
+}
+
+.accordionItemTrigger:hover {
+  transform: scale(1.1);
+}
+
+.accordionItemTrigger.open {
+  .bar:nth-child(1) {
+    transform: rotate(0deg);
+  }
+}
+
+.accordionItemBody {
+  background-color: var(--quinaryColor);
+  border-radius: var(--borderRadius);
+  width: 100%;
+  color: var(--primaryColor);
+  padding: 1em 2em;
+  margin: 0.5em 0 1em 0;
+  transition: all 500ms ease;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.bodyHeaderText {
+  margin: 0.75em 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  word-break: break-word;
+}
+
+.icon {
+  min-width: 1em;
+}
+
+.accordionBodyText {
+  margin: 0.75em 0;
+}
+
+.frameworksList {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.frameworkIcon {
+  padding: 0.25em 0.5em;
+  margin: 0.25em;
+  background-color: var(--tertiaryColor);
+  border-radius: 90px;
+  box-shadow: 10px 10px 11px 0px rgba(0, 0, 0, 0.1);
+}
+
+.frameworkIcon:nth-child(1) {
+  margin-left: -0.25em;
+}
+
+.link {
+  text-decoration: none;
+  cursor: pointer;
+  color: var(--primaryColor);
+}
+
+.hidden {
+  max-height: 0;
+  padding: 0;
+  margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .accordionItemHeader {
+    grid-template-columns: 15fr 1fr;
+    grid-template-rows: 3fr 2fr;
+
+    .headerTitle {
+      grid-column-start: 1;
+      grid-row-start: 1;
+    }
+
+    .headerDate {
+      grid-column-start: 1;
+      grid-row-start: 2;
+    }
+
+    .accordionItemTrigger {
+      grid-column-start: 2;
+      grid-row-start: 1;
+      grid-row-end: 3;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .accordionItemBody {
+    flex-direction: column-reverse;
+    padding: 1em;
+  }
+
+  .hidden {
+    max-height: 0;
+    padding: 0;
+    margin: 0;
+  }
+}

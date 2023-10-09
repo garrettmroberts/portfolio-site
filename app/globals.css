@@ -1,0 +1,55 @@
+:root {
+  /* Colors */
+  --primaryColor: #ececec;
+  --secondaryColor: #9fd3c7;
+  --tertiaryColor: #385170;
+  --quaternaryColor: #142d4c;
+  --quinaryColor: #263f5e;
+
+  /* Sizes */
+  --screenXl: 1200px;
+  --screenLg: 1024px;
+  --screenMd: 768px;
+  --screenSm: 480px;
+
+  --headerHeight: 10em;
+  --mobileHeaderHeoght: 7em;
+  --borderRadius: 9px;
+}
+
+body {
+  background-color: var(--quaternaryColor);
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+b,
+i {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  align-items: center;
+  padding-top: var(--headerHeight);
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    padding-top: var(--mobileHeaderHeoght);
+  }
+}

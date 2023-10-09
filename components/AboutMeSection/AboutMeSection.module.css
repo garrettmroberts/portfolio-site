@@ -1,0 +1,52 @@
+.small {
+  font-size: 1.2em;
+  color: var(--secondaryColor);
+  margin: 0.25em 0;
+  position: relative;
+  left: 2px;
+}
+
+.mainHeader {
+  font-size: 3.5em;
+  color: var(--primaryColor);
+  font-weight: bold;
+}
+
+.secondaryHeader {
+  font-size: 3.5em;
+  color: var(--tertiaryColor);
+  font-weight: bold;
+}
+
+.bodyText {
+  color: var(--primaryColor);
+  max-width: 800px;
+  margin-top: 1.75em;
+  line-height: 1.5em;
+  font-size: 1.2em;
+  margin-bottom: 2em;
+}
+
+.contactButton {
+  border: 2px solid var(--secondaryColor);
+  border-radius: var(--borderRadius);
+  color: var(--primaryColor);
+  padding: 0.75em 1.5em;
+  font-weight: bold;
+  transition: 0.5s ease;
+}
+
+.contactButton:hover {
+  background-color: var(--secondaryColor);
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 768px) {
+  .mainHeader {
+    font-size: 2.5em;
+  }
+
+  .secondaryHeader {
+    font-size: 2em;
+  }
+}
