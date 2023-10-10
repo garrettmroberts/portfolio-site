@@ -1,0 +1,38 @@
+.sectionHeader {
+  color: var(--primaryColor);
+  font-size: 2em;
+  align-self: center;
+  margin: 1em 0;
+}
+
+.socialWrapper {
+  display: flex;
+  margin-bottom: 1em;
+}
+
+.link {
+  color: var(--primaryColor);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  margin-right: 1em;
+  gap: 10px;
+  padding: 1em;
+  transition: all 250ms ease;
+}
+
+.icon {
+  font-size: 3em;
+}
+
+.link:hover {
+  color: var(--secondaryColor);
+  background-color: var(--tertiaryColor);
+  border-radius: var(--borderRadius);
+}
+
+@media screen and (max-width: 768px) {
+  .socialWrapper {
+    align-self: center;
+  }
+}

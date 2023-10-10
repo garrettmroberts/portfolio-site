@@ -1,4 +1,5 @@
 import AboutMeSection from '../components/AboutMeSection/AboutMeSection';
+import ContactSection from '../components/ContactSection/ContactSection';
 import ExperienceSection from '../components/ExperienceSection/ExperienceSection';
 import Navbar from '../components/Navbar/Navbar';
 import ProjectsSection from '../components/ProjectsSection/ProjectsSection';
@@ -13,7 +14,7 @@ const Home: NextPage = () => {
         <AboutMeSection />
         <ExperienceSection />
         <ProjectsSection />
-        <Section id="contact-section">Contact</Section>
+        <ContactSection />
       </main>
     </>
   );
