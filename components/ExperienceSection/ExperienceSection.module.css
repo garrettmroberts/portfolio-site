@@ -2,4 +2,5 @@
   color: var(--primaryColor);
   font-size: 2em;
   align-self: center;
+  margin: 1em 0;
 }

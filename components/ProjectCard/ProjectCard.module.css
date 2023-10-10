@@ -1,0 +1,62 @@
+.projectCard {
+  display: flex;
+  color: var(--primaryColor);
+  padding: 1em;
+  border-radius: var(--borderRadius);
+  gap: 2em;
+  transition: all 250ms ease;
+}
+
+.projectCard:hover {
+  background-color: #263f5e50;
+  box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.25);
+
+  .icon {
+    transform: rotate(45deg) translateY(-4px);
+  }
+}
+
+.textBlock {
+  margin: 1em 0;
+}
+
+.link {
+  text-decoration: none;
+  color: var(--primaryColor);
+  cursor: pointer;
+}
+
+.bodyText {
+  color: rgb(148, 163, 184);
+}
+
+.icon {
+  margin-left: 5px;
+  transform: rotate(45deg);
+  position: relative;
+  top: 3px;
+  transition: all 250ms ease;
+  color: var(--secondaryColor);
+}
+
+@media screen and (max-width: 1024px) {
+  .image {
+    width: 250px;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .projectCard {
+    flex-direction: column;
+    gap: 0;
+    background-color: #263f5e50;
+    box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.25);
+  }
+
+  .image {
+    width: 200px;
+    height: auto;
+    align-self: center;
+  }
+}
