@@ -1,0 +1,18 @@
+.scrollTransition {
+  opacity: 0;
+  transform: translateX(-100px);
+  transition: transform 1s, opacity 1s;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.scrollTransition.entering{
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.scrollTransition.leaving {
+  opacity: 0;
+  transform: translateX(-100px);
+}
