@@ -8,6 +8,7 @@ const ProjectsSection: FC = () => {
   return (
     <Section id="project-section">
       <h2 className={styles.sectionHeader}>Projects</h2>
+      <p className={styles.sectionSubheader}>This site is under construction.  Projects coming soon!</p>
       <div className={styles.flex}>
         {Projects.map((project, idx) => (
           <ProjectCard

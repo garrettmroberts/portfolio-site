@@ -57,9 +57,11 @@
   overflow: hidden;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: 10px;
   max-height: 100%;
   transition: max-height 250ms ease-in-out, padding 250ms ease 200ms, opacity 25ms ease 200ms, margin  250ms ease;
+  font-size: 1.1em;
 }
 
 .hidden {
@@ -83,7 +85,7 @@
 }
 
 .accordionBodyText {
-  margin: 0.75em 0;
+  margin: 1.25em 0.5em 1.25em 0;
 }
 
 .frameworksList {
@@ -130,11 +132,14 @@
       grid-row-end: 3;
     }
   }
+
+  .accordionItemBody {
+    flex-direction: column-reverse;
+  }
 }
 
 @media screen and (max-width: 480px) {
   .accordionItemBody {
-    flex-direction: column-reverse;
     padding: 1em;
   }
 

@@ -4,7 +4,7 @@ const Jobs = [
     date: ' 2021-current',
     website: 'www.credera.com',
     location: 'Remote',
-    description: 'Developing innovative solutions for household-name companies. Leading teams to find and address hundreds of bugs before production.',
+    description: 'Developing robust and scalable web applications for high-profile clients, ensuring adherence to industry best practices.  Leading a cross-functional team of QA professionals, overseeing testing processes in order to remove hundreds of bugs from source code before product launch.',
     frameworks: ['Java', 'Typescript', 'React', 'Scala', 'React Native'],
     logo: 'credera.jpeg'
   },
@@ -13,7 +13,7 @@ const Jobs = [
     date: '2020-2021',
     website: 'www.linkedin.com/company/techtonicgroup',
     location: 'Boulder, CO',
-    description: 'Developed full stack web applications for clients.  Apprentice -> Software Developer',
+    description: 'Completed an intensive software development apprenticeship program, gaining hands-on experience in building APIs and creating custom visual components for a CMS platform',
     frameworks: ['Javascript', 'React', 'Vue'],
     logo: 'techtonic.jpeg'
   },
@@ -22,7 +22,7 @@ const Jobs = [
     date: '2020',
     website: 'www.linkedin.com/company/levareorg',
     location: 'Remote',
-    description: 'Built a website for a small black-owned business with Stripe integration. Volunteer role.',
+    description: 'Built a custom wordpress theme and website for a small black-owned business.  Built a stripe integration for online ordering. Volunteer role.',
     frameworks: ['PHP', 'Wordpress'],
     logo: 'levare.jpeg'
   }
