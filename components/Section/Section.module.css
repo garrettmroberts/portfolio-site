@@ -1,6 +1,5 @@
 .sectionWrapper {
-  height: 100vh - var(--headerHeight);
-  min-height: 800px;
+  min-height: 700px;
   box-sizing: border-box;
   scroll-margin-top: 10em;
   display: flex;
@@ -10,6 +9,7 @@
   padding-left: 3em;
   padding-top: 4em;
   padding-right: 3em;
+  margin-bottom: var(--headerHeight);
 }
 
 .sectionContent {
