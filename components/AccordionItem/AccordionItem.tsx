@@ -55,7 +55,7 @@ const AccordionItem: FC<Props> = ({ job, onToggle, active }) => {
           <p className={styles.accordionBodyText}>{job.description}</p>
           <div className={styles.frameworksList}>
             {job.frameworks.map((fw: any) => (
-              <p className={styles.frameworkIcon} key={fw}>
+              <p className={styles.frameworkIcon} key={fw + job.title}>
                 {fw}
               </p>
             ))}

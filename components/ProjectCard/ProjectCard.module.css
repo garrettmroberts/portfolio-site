@@ -1,5 +1,6 @@
 .projectCard {
   display: flex;
+  align-items: center;
   color: var(--primaryColor);
   padding: 1em;
   border-radius: var(--borderRadius);

@@ -5,11 +5,17 @@ import ExperienceSection from '../components/ExperienceSection/ExperienceSection
 import Navbar from '../components/Navbar/Navbar';
 import ProjectsSection from '../components/ProjectsSection/ProjectsSection';
 import ScrollTransition from '../components/ScrollTransition/ScrollTransition';
+import { Inter } from 'next/font/google';
+
+const inter = Inter({ subsets: ['latin']})
+
 const Home: NextPage = () => {
   return (
     <>
       <Navbar />
-      <main>
+      <main
+        className={inter.className}
+      >
         <ScrollTransition>
           <AboutMeSection />
         </ScrollTransition>

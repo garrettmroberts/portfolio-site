@@ -86,6 +86,7 @@
 
 .accordionBodyText {
   margin: 1.25em 0.5em 1.25em 0;
+  line-height: 1.5em;
 }
 
 .frameworksList {
