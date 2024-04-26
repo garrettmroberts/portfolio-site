@@ -1,0 +1,12 @@
+.sectionHeader {
+  color: var(--primaryColor);
+  font-size: 2.5em;
+  align-self: center;
+  margin: 0 0 1em 0;
+}
+
+.resume {
+    width: 100%;
+    height: 80vh;
+    border: none;
+}
