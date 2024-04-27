@@ -68,9 +68,14 @@ const Navbar = () => {
             <span className={styles.number}>03.</span> Projects
           </h3>
         </NavLink>
+         <NavLink href="resume-section" onClick={toggleDropdown}>
+          <h3 className={styles.navLink}>
+            <span className={styles.number}>04.</span> Resume
+          </h3>
+        </NavLink>
         <NavLink href="contact-section" onClick={toggleDropdown}>
           <h3 className={styles.navLink}>
-            <span className={styles.number}>04.</span> Contact
+            <span className={styles.number}>05.</span> Contact
           </h3>
         </NavLink>
       </nav>
