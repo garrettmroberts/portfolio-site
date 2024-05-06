@@ -7,7 +7,6 @@ import ContactSection from '../components/ContactSection/ContactSection';
 import ExperienceSection from '../components/ExperienceSection/ExperienceSection';
 import ProjectsSection from '../components/ProjectsSection/ProjectsSection';
 import ScrollTransition from '../components/ScrollTransition/ScrollTransition';
-import ResumeSection from '../components/ResumeSection/ResumeSection';
 
 const inter = Inter({ subsets: ['latin']})
 
@@ -26,9 +25,6 @@ const Home: NextPage = () => {
         </ScrollTransition>
         <ScrollTransition>
           <ProjectsSection />
-        </ScrollTransition>
-        <ScrollTransition>
-          <ResumeSection />
         </ScrollTransition>
         <ScrollTransition>
           <ContactSection />

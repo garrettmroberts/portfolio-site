@@ -3,10 +3,13 @@
   justify-content: space-between;
   align-items: center;
   position: fixed;
-  padding: 2em 2em 0 2em;
+  padding: 2em;
   left: 0;
   right: 0;
   z-index: 3;
+  background-color: #38517050;
+  background: linear-gradient(
+    to top, transparent, #385170);
 }
 
 .navigationLinks {
