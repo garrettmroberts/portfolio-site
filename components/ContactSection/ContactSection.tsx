@@ -9,6 +9,9 @@ import { BsGithub } from 'react-icons/bs';
 import Link from 'next/link';
 
 const ContactSection: FC = () => {
+
+  const isOnMobileDevice = () => /iPhone/i.test(navigator.userAgent) || /Android/i.test(navigator.userAgent);
+
   return (
     <Section id="contact-section">
       <h2 className={styles.sectionHeader}>Contact me</h2>
@@ -23,7 +26,7 @@ const ContactSection: FC = () => {
           Github
         </Link>
         <Link
-          href="https://www.linkedin.com/in/garrettmroberts/"
+          href={ isOnMobileDevice() ? 'linkedin://profile/garrettmroberts' : 'https://www.linkedin.com/in/garrettmroberts/'}
           className={styles.link}
         >
           <IconContext.Provider value={{ className: styles.icon }}>
