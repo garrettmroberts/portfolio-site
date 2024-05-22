@@ -10,7 +10,12 @@ import Link from 'next/link';
 
 const ContactSection: FC = () => {
 
-  const isOnMobileDevice = () => /iPhone/i.test(navigator.userAgent) || /Android/i.test(navigator.userAgent);
+  const isOnMobileDevice = () => {
+    if (typeof window !== 'undefined') {
+      return /iPhone/i.test(navigator.userAgent) || /Android/i.test(navigator.userAgent);
+    }
+    return false;
+  }
 
   return (
     <Section id="contact-section">
