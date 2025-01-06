@@ -1,12 +1,21 @@
 const Jobs = [
     {
+      title: 'Senior Software Engineer @ Savvly',
+      date: '2024-2025',
+      website: 'www.savvly.com',
+      location: 'Boulder, CO',
+      description: 'Led a distributed team of developers in developing new financial applications. Worked directly with the design team to ensure that their plans were technically feasible and that the applications were identical to Figma designs. Synchronized user management between deprecated authentication platforms and newer ones. Iterated applications quickly in a fast-paced startup environment.',
+      frameworks: ['Typescript', 'NextJS', 'AWS', 'Python', 'Java', 'Springboot', 'Azure'],
+      logo: 'savvly.jpeg'
+    },
+    {
     title: 'Software Developer @ Credera',
-    date: ' 2021-current',
+    date: ' 2021-2024',
     website: 'www.credera.com',
     location: 'Remote',
     description: `
-      Developing robust and scalable web applications for high-profile clients,
-      ensuring adherence to industry best practices.  Developed a unifying API between 
+      Developed robust and scalable web applications for high-profile clients,
+      Ensured adherence to industry best practices.  Developed a unifying API between 
       three disparate databases from acquired companies.  Led a multi-national 
       team of QA professionals in a greenfield testing project, overseeing testing processes in order to remove hundreds of bugs from source code before product launch.
     `,
