@@ -40,11 +40,9 @@
   color: var(--secondaryColor);
 }
 
-@media screen and (max-width: 1024px) {
-  .image {
-    width: 250px;
-    height: auto;
-  }
+.image {
+  width: 200px;
+  height: auto;
 }
 
 @media screen and (max-width: 768px) {
@@ -57,7 +55,6 @@
   }
 
   .image {
-    width: 200px;
     height: auto;
     align-self: center;
   }
