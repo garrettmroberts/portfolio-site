@@ -1,7 +1,15 @@
 import weGusta from "../assets/wegusta.png";
 import pocketTutor from "../assets/pockettutor.png";
+import mdNotes from "../assets/mdnotes.png";
 
 const Projects = [
+  {
+    title: "MdNotes",
+    description:
+      "MdNotes is a desktop markdown note-taking app that allows you to create, edit, and delete notes. It is built using React and TypeScript, and it uses local storage to save your notes.  All notes are sorted as if you were using a binder (i.e. Notebook > Folder > Page).  This project was built using React, TypeScript, and Electron.",
+    image: mdNotes,
+    link: "https://github.com/garrettmroberts/markdown-editor",
+  },
   {
     title: "WeGusta",
     description:
