@@ -1,8 +1,15 @@
 import weGusta from "../assets/wegusta.png";
 import pocketTutor from "../assets/pockettutor.png";
 import mdNotes from "../assets/mdnotes.png";
-
+import tapiocaEMDR from "../assets/tapiocaemdr.png";
 const Projects = [
+  {
+    title: "Tapioca EMDR",
+    description:
+      "Tapioca EMDR is a web application that allows therapists to create and manage EMDR telehealth sessions.  It automates EMDR visualizations and allows therapists to focus on their clients.",
+    image: tapiocaEMDR,
+    link: "https://tapiocaemdr.com",
+  },
   {
     title: "MdNotes",
     description:
